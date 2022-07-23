@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "keY9jOoRXUA0ox3MWhruP53e+4qdp8MP/5kg2LnsHOMQOG+Ta0TuVy9HURfQH+4u/Lr5jLkXxxg+6Ac6OgvL3g==",
+  "success": true,
+  "projectFilePath": "/Users/muhammedkorkmaz/Documents/Design-Patterns-using-C-and-.NET-Core/Section 2/2.5/GuardiansOfTheCode/GuardiansOfTheCode.csproj",
+  "expectedPackageFiles": [
+    "/Users/muhammedkorkmaz/.nuget/packages/newtonsoft.json/13.0.1/newtonsoft.json.13.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

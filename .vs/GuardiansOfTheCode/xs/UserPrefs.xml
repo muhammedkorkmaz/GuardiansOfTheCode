@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="Multiple Projects">
+  <MonoDevelop.Ide.Workbench ActiveDocument="GuardiansOfTheCode/Program.cs">
+    <Files>
+      <File FileName="GuardiansOfTheCode/Program.cs" Line="23" Column="35" />
+      <File FileName="GuardiansOfTheCode/Gameboard.cs" Line="15" Column="1" />
+      <File FileName="GuardiansOfTheCode/PrimaryPlayer.cs" Line="14" Column="44" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="GuardiansOfTheCode" expanded="True">
+            <Node name="GuardiansOfTheCode" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.GuardiansOfTheCode PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.ItemProperties.Api PreferredExecutionTarget="/Applications/Safari.app" />
+  <Debugger.DebugSourceFolders />
+  <MultiItemStartupConfigurations>
+    <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
+      <Items>
+        <StartupItem ItemId="{F729865A-7779-45B0-AB09-5F180246E4C1}" ItemName="Api" ConfigurationId="Default" />
+        <StartupItem ItemId="{EEC7AC2F-28D8-45BF-9763-2EDD3B915AC4}" ItemName="GuardiansOfTheCode" ConfigurationId="Default" />
+      </Items>
+    </MultiItemSolutionRunConfiguration>
+  </MultiItemStartupConfigurations>
+</Properties>
