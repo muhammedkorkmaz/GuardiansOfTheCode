@@ -24,9 +24,10 @@ namespace GuardiansOfTheCode
             _level = level;
         }
 
-        public void Attack(PrimaryPlayer player)
+        public int Attack(PrimaryPlayer player)
         {
             Console.WriteLine("Giant attacks " + player.Name);
+            return 30;
         }
 
         public void Defend(PrimaryPlayer player)

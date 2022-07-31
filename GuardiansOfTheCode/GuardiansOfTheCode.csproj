@@ -10,8 +10,28 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Newtonsoft.Json" />
+    <None Remove="MilkyWayponLib" />
+    <None Remove="Adapters\" />
+    <None Remove="Facades\" />
+    <None Remove="Proxies\" />
+    <None Remove="Strategies\" />
+    <None Remove="Events\" />
+    <None Remove="Observer\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MilkyWayponLib">
+      <HintPath>..\..\..\Section 4\4.2\MilkyWayponLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Adapters\" />
+    <Folder Include="Facades\" />
+    <Folder Include="Proxies\" />
+    <Folder Include="Strategies\" />
+    <Folder Include="Events\" />
+    <Folder Include="Observer\" />
   </ItemGroup>
 </Project>

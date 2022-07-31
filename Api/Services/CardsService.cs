@@ -12,14 +12,13 @@ namespace Api.Services
 
         public IEnumerable<Card> FetchCards()
         {
-
             return new List<Card>()
             {
-                new Card(){Attack=90, Defense=80, Name="Ultimate Shadow Wraith" },
-                new Card(){Attack=65, Defense=88, Name="Puppet of Doom" },
-                new Card(){Attack=77, Defense=77, Name="Lost Soul" },
-                new Card(){Attack=55, Defense=66, Name="Plague Droid" },
-                new Card(){Attack=90, Defense=88, Name="Rage Dragon" }
+                new Card("Ultimate Shadow Wraith",90,80),
+                new Card("Puppet of Doom" , 65,88),
+                new Card("Lost Soul"  , 65,88),
+                new Card("Plague Droid" , 65,88),
+                new Card("Rage Dragon" , 65,88)
             };
         }
     }

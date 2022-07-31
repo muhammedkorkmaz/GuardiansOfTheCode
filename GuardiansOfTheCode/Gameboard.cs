@@ -4,68 +4,43 @@ using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Common;
+using GuardiansOfTheCode.Adapters;
+using GuardiansOfTheCode.Facades;
+using MilkyWayponLib;
 using Newtonsoft.Json;
 
 namespace GuardiansOfTheCode
 {
     public class Gameboard
     {
+        private GameboardFacade _gameboardFacade;
+
         private PrimaryPlayer _player;
-        private EnemyFactory _enemyFactory;
 
         public Gameboard()
         {
             _player = PrimaryPlayer.Instance;
-            _player.Weapon = new Sword(12, 8);
+            _gameboardFacade = new GameboardFacade();
         }
 
         public async Task PlayArea(int lvl)
         {
-            _enemyFactory = new EnemyFactory(lvl);
-
-            if(lvl == 1)
+            if (lvl == -1)
             {
-                _player.Cards = (await FetchCards()).ToArray();
-
-                Console.WriteLine("Ready to play level 1");
+                Console.WriteLine("Play special level");
                 Console.ReadKey();
-                PlayFirstLevel();
+                PlaySpecialLevel();
+            }
+            else
+            {
+                await _gameboardFacade.Play(_player, lvl);
             }
         }
 
-        public void PlayFirstLevel()
+        private void PlaySpecialLevel()
         {
-            const int currentLvl = 1;
-            EnemyFactory factory = new EnemyFactory(currentLvl);
-            List<IEnemy> enemies = new List<IEnemy>();
-            for(int i=0; i<10; i++)
-            {
-                enemies.Add(factory.SpawnZombie(currentLvl));
-            }
+            _player.Weapon = new WeaponAdapter(new Blaster(20, 15, 15));
 
-            for(int i=0; i< 3; i++)
-            {
-                enemies.Add(factory.SpawnWerewolf(currentLvl));
-            }
-
-            foreach (var enemy in enemies)
-            {
-                while(enemy.Health > 0 || _player.Health > 0)
-                {
-                    _player.Weapon.Use(enemy);
-                    enemy.Attack(_player);
-                }
-            }
         }
-
-        private async Task<IEnumerable<Card>> FetchCards()
-        {
-            using (var http=new HttpClient())
-            {
-                var cardsJson= await http.GetStringAsync("https://localhost:42296/api/Cards");
-
-                return JsonConvert.DeserializeObject<IEnumerable<Card>>(cardsJson);
-            }
-        } 
     }
 }

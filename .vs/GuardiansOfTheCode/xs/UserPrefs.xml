@@ -1,16 +1,26 @@
-﻿<Properties StartupConfiguration="Multiple Projects">
-  <MonoDevelop.Ide.Workbench ActiveDocument="GuardiansOfTheCode/Program.cs">
+﻿<Properties StartupConfiguration="{EEC7AC2F-28D8-45BF-9763-2EDD3B915AC4}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Api PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <Debugger.DebugSourceFolders />
+  <MonoDevelop.Ide.Workbench ActiveDocument="GuardiansOfTheCode/Facades/GameboardFacade.cs">
     <Files>
-      <File FileName="GuardiansOfTheCode/Program.cs" Line="23" Column="35" />
-      <File FileName="GuardiansOfTheCode/Gameboard.cs" Line="15" Column="1" />
-      <File FileName="GuardiansOfTheCode/PrimaryPlayer.cs" Line="14" Column="44" />
+      <File FileName="Common/CardDeck.cs" Line="30" Column="48" />
+      <File FileName="Common/ICardComponent.cs" Line="7" Column="23" />
+      <File FileName="Common/Card.cs" Line="38" Column="52" />
+      <File FileName="GuardiansOfTheCode/Program.cs" Line="99" Column="27" />
+      <File FileName="GuardiansOfTheCode/Facades/GameboardFacade.cs" Line="80" Column="18" />
+      <File FileName="GuardiansOfTheCode/Proxies/CardsProxy.cs" Line="27" Column="14" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="GuardiansOfTheCode" expanded="True">
+            <Node name="Common" expanded="True" />
             <Node name="GuardiansOfTheCode" expanded="True">
-              <Node name="Dependencies" expanded="True" />
+              <Node name="Adapters" expanded="True" />
+              <Node name="Facades" expanded="True" />
+              <Node name="Proxies" expanded="True" />
             </Node>
           </Node>
         </State>
@@ -20,14 +30,10 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.GuardiansOfTheCode PreferredExecutionTarget="MonoDevelop.Default" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.ItemProperties.GuardiansOfTheCode PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.ItemProperties.Api PreferredExecutionTarget="/Applications/Safari.app" />
-  <Debugger.DebugSourceFolders />
   <MultiItemStartupConfigurations>
     <MultiItemSolutionRunConfiguration Id="Multiple Projects" Name="Multiple Projects">
       <Items>
